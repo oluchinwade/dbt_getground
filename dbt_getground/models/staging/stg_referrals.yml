@@ -1,0 +1,15 @@
+version: 2
+
+models:
+  - name: stg_referrals
+    description: Staged data for referrals
+    columns:
+      - name: referral_id
+        description: The primary key for referrals.
+        tests:
+          - unique
+          - not_null
+      - name: status
+        description: Accepted status values in referral update.
+      - name: partner_id
+        description: Foreign key to stg_partners.partner_id.

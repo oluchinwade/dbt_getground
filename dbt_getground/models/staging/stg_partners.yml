@@ -1,0 +1,12 @@
+version: 2
+
+models:
+  - name: stg_partners
+    description: Staged partners data 
+    columns:
+      - name: partner_id
+        description: The primary key for partners.
+        tests:
+          - unique
+          - not_null
+
