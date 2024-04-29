@@ -1,0 +1,10 @@
+version: 2
+
+models:
+  - name: stg_sales_people
+    description: Staged partners data 
+    columns:
+      - name: name
+        description: names of sales person
+      - name: country
+        description: Where they work from.

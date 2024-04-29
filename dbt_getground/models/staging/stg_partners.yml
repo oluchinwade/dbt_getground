@@ -9,4 +9,11 @@ models:
         tests:
           - unique
           - not_null
-
+      - name: created_at
+        description: When the partner data was created.
+      - name: updated_at
+        description: This shows the time the status of the referral changed based on the partners.
+      - name: partner_type
+        description: The type of partner within Getground
+      - name: lead_sales_contact
+        description: The name of the lead sales person

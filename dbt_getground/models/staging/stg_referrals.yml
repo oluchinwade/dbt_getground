@@ -10,6 +10,13 @@ models:
           - unique
           - not_null
       - name: status
-        description: Accepted status values in referral update.
+        description: Shows whether a referral is 'pending', 'disinterested' or 'successful'.
       - name: partner_id
-        description: Foreign key to stg_partners.partner_id.
+        description: Foreign key to stg_partners.partner_id. A relationship test was not created here because of the joining that will occur in the fct_gg_referrals table.
+      - name: created_at
+        description: When the referral data was created.
+      - name: updated_at
+        description: This shows the time the status of the referral changed.
+      - name: consultant_id
+        description: Consultant primary key.
+
