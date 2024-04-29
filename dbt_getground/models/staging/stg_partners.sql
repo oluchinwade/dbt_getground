@@ -11,7 +11,7 @@ with partners as(
     , to_timestamp_ntz(created_at/1000000000) as created_at
     , to_timestamp_ntz(updated_at/1000000000) as updated_at
     , partner_type
-    , lead_sales_contact
+    , case when lead_sales_contact = '0' then 'No Agent' else lead_sales_contact end as lead_sales_contact
   from {{ ref('partners')}}
 )
 , final as (
